@@ -2,7 +2,7 @@
 
 把自建 [SearXNG](https://searxng.org/) 接到 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 的 `web_search` 上。
 
-**267 行有效代码 · 零依赖 · 不锁定 DSH 版本 · MIT**
+**276 行有效代码 · 零依赖 · 不锁定 DSH 版本 · MIT**
 
 ---
 
@@ -74,7 +74,7 @@ DSH 的插件兼容性检查看两处：`peerDependencies` 里的 `@deepseek-ai/
 
 没有 `undici`，没有 `schemastery`，没有 `zod`，没有任何运行时依赖。
 
-- 安装体积：**7 KB**
+- 安装体积：**约 23 KB**
 - 供应链攻击面：**0 个第三方包**
 - 不会因为某个传递依赖被删/被改而挂掉
 
@@ -82,7 +82,7 @@ DSH 的插件兼容性检查看两处：`peerDependencies` 里的 `@deepseek-ai/
 
 不试图支持 11 个后端，不做熔断器、不做多实例轮询、不做用量统计面板。
 
-一个 provider，一个配置文件，267 行。你想改逻辑，五分钟能读完。
+一个 provider，一个配置文件，276 行。你想改逻辑，五分钟能读完。
 
 ### 4. 把别人漏掉的细节补上
 
