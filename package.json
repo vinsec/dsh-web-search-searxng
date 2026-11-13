@@ -1,0 +1,44 @@
+{
+  "name": "dsh-web-search-searxng",
+  "version": "0.1.1",
+  "description": "SearXNG search provider for DeepSeek Harness (ctx.web). Zero dependencies and no DSH version lock.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "web-search",
+    "searxng",
+    "metasearch",
+    "cordis"
+  ],
+  "author": "vinsec",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinsec/dsh-web-search-searxng.git"
+  },
+  "homepage": "https://github.com/vinsec/dsh-web-search-searxng#readme",
+  "bugs": {
+    "url": "https://github.com/vinsec/dsh-web-search-searxng/issues"
+  },
+  "scripts": {
+    "test": "node test/harness.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

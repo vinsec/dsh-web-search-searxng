@@ -1,0 +1,18 @@
+# dsh-web-search-searxng bundle patch.
+#
+# Mounts the provider. It does NOT select it: choose "SearXNG" in
+# Plugins > Built-in plugin settings > Web search and fetch, or pin it here:
+#
+#   - id: web
+#     config:
+#       searchProvider: searxng
+#       fetchProvider: http
+#
+# Point baseURL at your own instance. A Tailscale/WireGuard address keeps the
+# instance off the public internet.
+
+- insert:
+    - id: web-search-searxng
+      name: 'dsh-web-search-searxng'
+      config:
+        baseURL: http://127.0.0.1:8080
